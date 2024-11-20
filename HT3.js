@@ -93,5 +93,13 @@ order.addProduct(product1);
 order.addProduct(product2);
 order.addProduct(product3);
 
+let index = 0;
+while (index < order.products.length) {
+  const product = order.products[index];
+  console.log(`Product Name: ${product.name}, Price: $${product.price}`);
+  index++;
+}
+
+
 console.log(`Order Number: ${order.orderNumber}`);
 console.log(`Total Price: $${order.getTotalPrice()}`); 
